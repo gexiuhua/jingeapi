@@ -55,24 +55,6 @@ return [
             'class' => 'yii\gii\Module',
             'allowedIPs' => ['127.0.0.1','::1','112.21.166.40'] // 按需调整这里
         ],
-        'v10' => [
-            'class' => 'api\modules\v10\v10',
-        ],
-        'v20' => [
-            'class' => 'api\modules\v20\V20',
-        ],
-        'user'=> [
-            'class' => 'www\modules\user\User',
-        ],
-        'wap' => [
-            'class' => 'www\modules\wap\Wap',
-        ],
-        'admin' => [
-            'class' => 'www\modules\admin\Admin',
-        ],
-        'weixin' => [
-            'class' => 'www\modules\weixin\Weixin',
-        ],
     ],
 ];
 

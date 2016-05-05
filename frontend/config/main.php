@@ -9,7 +9,7 @@ return [
     'id' => 'app-api',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
-    'controllerNamespace' => 'api\controllers',
+    'controllerNamespace' => 'app\controllers',
     'components' => [
         'urlManager' => [
             'enablePrettyUrl' => true,

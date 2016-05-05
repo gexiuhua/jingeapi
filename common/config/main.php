@@ -40,14 +40,15 @@ return [
             'errorAction' => 'site/error',
         ],
          'cache' => [
-             'class' => '\yii\caching\MemCache',
-             'keyPrefix' => '',
-             'servers' => [
-                 [
-                     'host' => '127.0.0.1',
-                     'port' => 11211,
-                 ],
-             ],
+             'class' => 'yii\caching\FileCache',
+//             'class' => '\yii\caching\MemCache',
+//             'keyPrefix' => '',
+//             'servers' => [
+//                 [
+//                     'host' => '127.0.0.1',
+//                     'port' => 11211,
+//                 ],
+//             ],
          ],
     ],
     'modules' => [
@@ -55,6 +56,10 @@ return [
             'class' => 'yii\gii\Module',
             'allowedIPs' => ['127.0.0.1','::1','112.21.166.40'] // 按需调整这里
         ],
+        'v1_2' => [
+            'class' => 'app\modules\v1_2\V1_2',
+        ],
+
     ],
 ];
 

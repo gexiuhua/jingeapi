@@ -7,5 +7,4 @@
  */
 
 return [
-    '<>' => 'api/v10/<controller>/<action>',
 ];

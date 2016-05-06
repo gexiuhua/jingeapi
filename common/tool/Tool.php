@@ -8,6 +8,18 @@ use yii\log\FileTarget;
 
 class Tool{
 
+    public static function reJson($data = null, $text = '', $code = null){
+        $code === null and $code = Code::SUCCESS;
+        $re = [
+            'ret'  => (int)$code,
+            'text' => $text,
+        ];
+        $data !== null and $re['data'] = $data;
+
+        return $re;
+    }
+
+
     /**
      * 浏览器友好的变量输出
      * @param mixed $var 变量

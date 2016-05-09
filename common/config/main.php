@@ -6,10 +6,10 @@ return [
     'components' => [
         'db' => [
             'class' => 'yii\db\Connection',
-            'dsn' => 'mysql:host=localhost;dbname=jingecms',
-            'username' => 'root',
-            'password' => 'czjinge.com123',
-            'tablePrefix' => 'jms_',
+            'dsn' => 'mysql:host=139.196.14.176;dbname=jingeapi',
+            'username' => 'jinge',
+            'password' => 'czjinge.mysql123',
+            'tablePrefix' => 'j_',
             'enableSchemaCache' => true,
             'schemaCacheDuration' => 600,
             'charset' => 'utf8',

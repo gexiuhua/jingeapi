@@ -6,7 +6,7 @@
  * @Desc    微信接口消息加密解密
  */
 
-namespace common\tool;
+namespace common\tool\wechat;
 
 
 
